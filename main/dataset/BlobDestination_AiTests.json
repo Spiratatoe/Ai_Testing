@@ -1,0 +1,24 @@
+{
+	"name": "BlobDestination_AiTests",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlob_Concrnd",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "files/ai_tests",
+				"container": "datafactory"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

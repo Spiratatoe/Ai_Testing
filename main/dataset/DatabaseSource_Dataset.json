@@ -1,0 +1,17 @@
+{
+	"name": "DatabaseSource_Dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OnlineDatabase_LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "your_table_name"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
